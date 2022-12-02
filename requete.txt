@@ -1,0 +1,21 @@
+=> La requête ci-dessous permet de créer la base de données soccer 
+
+CREATE DATABASE IF NOT EXISTS `soccer` DEFAULT CHARACTER SET utf8 COLLATE
+utf8_general_ci;
+USE `soccer`;
+
+
+=> La requête ci-dessous permet de créer la table arenas au sein de la base de données. Cette table contiendra un champ nommé arenaid initié en tant que integer, en clé primaire et en auto-incrémentation.
+Le deuxième champ est initié en tant que chaîne de caractères, il est nommé arena
+
+CREATE TABLE arenas (
+arenaid int NOT NULL AUTO_INCREMENT,
+arena varchar(255) NOT NULL,
+PRIMARY KEY (arenaid)
+);
+
+
+=> La requête ci-dessous permet d'insérer dans la table arenas une valeur dans le champ arena qui sera l'url des arènes
+
+INSERT INTO `arenas` (`arena`)
+VALUES ('<a href="https://goo.gl/maps/NrZseHo7wAbCPgMd7">Torredembarra spain</a>');

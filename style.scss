@@ -1,0 +1,81 @@
+@import '_variables.scss';
+
+body{
+    background-color: $backgroundSite;
+    header{
+        nav{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            background-color: $secondaryBackground;
+        }
+
+        img{
+            padding-left: 10vh;
+        }
+
+        ul{
+            padding-right: 50vh;
+            width: 30%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+
+            .green{
+                color: $writeGreenColor;
+            }
+        }
+
+        
+        button{
+            width: 5%;
+            margin: auto;
+            height: 3vh;
+            border-radius: 12px;
+        }
+    }
+
+    #hero{
+        padding-top: 15vh;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: $secondaryBackground;
+        padding-bottom: 23vh;
+
+        .box{
+            width: 90%;
+            margin: auto;
+            position: relative;
+            p{
+                width: 45%;
+                font-size: 1.5em;
+            }
+
+            h1{
+                font-size: 3em;
+            }
+        }
+
+        img{
+            top: 2%;
+            right: 6%;
+            width: 60%;
+            height: auto;
+            position: absolute;
+        }
+    }
+
+    img{
+        position: relative;
+        bottom: 20%;
+    }
+}
